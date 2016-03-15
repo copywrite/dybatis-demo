@@ -51,6 +51,9 @@
 		<property name="dataSource">
 			<ref bean="mysqlDataSource" />
 		</property>
+		<property name="resouceProjectPath">
+			<value>/dybatis-demo/dybatis-service/storage/sqlmap/</value>
+		</property>
 	</bean>
 
 	<bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">
