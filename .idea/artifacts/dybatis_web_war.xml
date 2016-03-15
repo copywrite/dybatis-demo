@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dybatis-web:war">
+    <output-path>$PROJECT_DIR$/dybatis-web/target</output-path>
+    <root id="archive" name="dybatis.war">
+      <element id="artifact" artifact-name="dybatis-web:war exploded" />
+    </root>
+  </artifact>
+</component>

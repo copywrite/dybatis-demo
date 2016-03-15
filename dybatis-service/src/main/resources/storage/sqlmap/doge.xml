@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--  Generate by autoSQLMap Powered by duxing@Taobao -->
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="DogeDAO">
+
+    <typeAlias alias="DogeDO" type="com.copywrite.dybatis.bean.DogeDO"/>
+
+    <resultMap id="resultDogeDOMap" class="DogeDO">
+        <result property="id" column="ID"/>
+    </resultMap>
+
+    <select id="DogeDAO.query" resultMap="resultDogeDOMap">
+      SELECT id FROM (
+        SELECT '0' AS id
+        UNION
+        SELECT '1' AS id
+        UNION
+        SELECT '2' AS id
+        UNION
+        SELECT '3' AS id
+        UNION
+        SELECT '4' AS id
+        UNION
+        SELECT '5' AS id
+        UNION
+        SELECT '6' AS id
+      ) doge ORDER BY id DESC
+    </select>
+</sqlMap>
